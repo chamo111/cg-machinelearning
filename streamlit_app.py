@@ -21,3 +21,10 @@ with st.expander('Data'):
 
 with st.expander('Data Visualization'):
   st.scatter_chart(data=df, x = 'bill_depth_mm', y = 'body_mass_g', color = 'species')
+
+#Data preparations
+#"species","island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
+with st.sidebar:
+  st.header('Input Features')
+  
+  
