@@ -52,7 +52,7 @@ with st.expander('Input Features'):
 #Data Preparations
 #encode X
 encode = ['island','sex'] #because they are strings
-df_penguins = pd.get_dummies(input_penguins,prefix=encode)
+df_penguins = pd.get_dummies(input_penguins,prefix=encode) #encoded version
 #df_penguins
 input_row = df_penguins[:1]
 
@@ -78,7 +78,7 @@ with st.expander('Data Preparation'):
 # model training
 ## Train the ML model
 clf = RandomForestClassifier()
-clf.fit(X_raw, y) 
+clf.fit(df_penguins, y) 
 
 ## Apply model to make predictions
 Prediction = clf.predict(input_row)
