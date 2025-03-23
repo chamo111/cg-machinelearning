@@ -88,7 +88,7 @@ prediction_proba = clf.predict_proba(input_row)
 
 prdeicyion_proba.rename(columns={0:'Adelie',
                                 1: 'Chinstrap',
-                                2: 'Gentoo'}
+                                2: 'Gentoo'})
 
 prediction_proba
 
