@@ -2,4 +2,4 @@ import streamlit as st
 
 st.title('Machine Learning App')
 
-st.info('Developed by Chamodhie Gamage')
+st.info('This app builds a Machine Learning Model!')
