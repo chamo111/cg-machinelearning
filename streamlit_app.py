@@ -68,7 +68,7 @@ y_raw
 
 
 
-with st.expander('Data Preparation):  
+with st.expander('Data Preparation'):  
   st.write('**Encoded Input Penguins(X)**')
   input_row
   st.write('**Encoded y**')
