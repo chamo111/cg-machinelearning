@@ -86,7 +86,7 @@ clf.fit(X, y)
 Prediction = clf.predict(input_row)
 prediction_proba = clf.predict_proba(input_row)
 
-prediction_proba
+prediction_proba.columns = ['Adelie','Chinstrap','Gentoo']
 
 
 
