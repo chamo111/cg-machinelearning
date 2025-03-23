@@ -21,8 +21,8 @@ with st.expander('Data'):
   y_raw = df.price
   y_raw
 
-#with st.expander('Data Visualization'):
-  #st.scatter_chart(data=df, x = 'bill_depth_mm', y = 'body_mass_g', color = 'species')
+with st.expander('Data Visualization'):
+  st.scatter_chart(data=df, x = 'area', y = 'bedrooms', color = 'price')
 
 ##Input Features
 #with st.sidebar:
