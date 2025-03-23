@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('Machine Learning App')
 st.write('**Developed by Chamodhie Gamage**')
@@ -73,6 +74,19 @@ with st.expander('Data Preparation'):
   input_row
   st.write('**Encoded y**')
   y
+
+# model training
+## Train the ML model
+clf = RandomForestClassifier()
+clf.fit(X_raw, y) 
+
+## Apply model to make predictions
+Prediction = clf.predict(input_row)
+prediction_proba = clf.predict_proba(input_row)
+
+
+
+
 
 
 
