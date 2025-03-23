@@ -18,7 +18,7 @@ with st.expander('Data'):
   X_raw
 
   st.write('**y**')
-  y_raw = df.price
+  y_raw = df.species
   y_raw
 
 with st.expander('Data Visualization'):
