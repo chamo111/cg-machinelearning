@@ -10,7 +10,7 @@ st.info('This app builds a Machine Learning Model!')
 
 with st.expander('Data'):
   st.write('**Raw Data**')
-  df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
+  df = pd.read_csv('https://www.kaggle.com/datasets/yasserh/housing-prices-dataset/data')
   df
 
   #st.write('**X**')
