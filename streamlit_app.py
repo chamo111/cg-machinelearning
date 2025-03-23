@@ -13,13 +13,13 @@ with st.expander('Data'):
   df = pd.read_csv('https://raw.githubusercontent.com/chamo111/cg-machinelearning/refs/heads/master/Housing.csv')
   df
 
-  #st.write('**X**')
-  #X_raw = df.drop('species',axis=1)
-  #X_raw
+  st.write('**X**')
+  X_raw = df.drop('price',axis=1)
+  X_raw
 
-  #st.write('**y**')
-  #y_raw = df.species
-  #y_raw
+  st.write('**y**')
+  y_raw = df.price
+  y_raw
 
 #with st.expander('Data Visualization'):
   #st.scatter_chart(data=df, x = 'bill_depth_mm', y = 'body_mass_g', color = 'species')
